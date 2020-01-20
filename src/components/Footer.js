@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
 
                         <li>
                             <img src="../img/barista_2.png" alt="" />
-                            Profile
+                            Profilo
                         </li>
                         <li>
                             <img src="../img/coffee-cup.png" alt="" />
