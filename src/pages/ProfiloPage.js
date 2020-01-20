@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Title from "../components/Title";
+/* import Title from "../components/Title"; */
+import Footer from "../components/Footer";
 
 export default class Dashboard extends React.Component {
 
@@ -10,9 +11,10 @@ export default class Dashboard extends React.Component {
         let abstract = "Aggiorna i tuoi dati."
         return (
             <div>
-                <Navbar>
+                <Navbar title={title} abstract={abstract}>
                 </Navbar>
-                <Title title={title} abstract={abstract}></Title>
+                {/* <Title title={title} abstract={abstract}></Title> */}
+                <Footer></Footer>
             </div>
 
         )

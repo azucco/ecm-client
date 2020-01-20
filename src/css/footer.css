@@ -3,12 +3,16 @@
 	background: #f4f4f4;
 	color: #444;
 	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .footer ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding: 0px;
+	margin: 0px;
 }
 
 .footer ul li {
@@ -17,6 +21,6 @@
 	align-items: center;
 }
 
-.footer ul li img {
-	width: 50px;
+.footer ul li .icon {
+	font-size: 28px;
 }

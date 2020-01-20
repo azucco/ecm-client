@@ -10,9 +10,9 @@ export default class Card extends React.Component {
                     if (this.props.chart === "") {
                         return (
                             <div>
-                                <div className="card-header">
+                               {/*  <div className="card-header">
                                     <h2 className="my-0 font-weight-normal">{this.props.icon}</h2>
-                                </div>
+                                </div> */}
                                 <div className="card-body">
                                     <h1 className="card-title pricing-card-title">
                                         {this.props.unit}{this.props.value}

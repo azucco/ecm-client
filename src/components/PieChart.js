@@ -10,7 +10,7 @@ export default class PieChart extends React.Component {
 			exportEnabled: false,
 			data: [{
 				type: "doughnut",
-				showInLegend: true,
+				showInLegend: false,
 				legendText: "{label}",
 				toolTipContent: "{label}: <strong>{y}%</strong>",
 				indexLabel: "{y}%",

@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import CardDeck from "../components/CardDeck";
-import Title from "../components/Title";
+/* import Title from "../components/Title"; */
 import Footer from "../components/Footer";
 import axios from "axios"
 import '../css/dashboard.css';
+import '../css/button.css';
 
 export default class Dashboard extends React.Component {
 
@@ -49,12 +50,12 @@ export default class Dashboard extends React.Component {
         let abstract = "Tieni sotto controllo i tuoi consumi..."
         return (
             <div>
-                <Navbar>
+                <Navbar title={title} abstract={abstract} >
                 </Navbar>
-                <Title title={title} abstract={abstract}></Title>
+                {/* <Title title={title} abstract={abstract}></Title> */}
                 <div className="text-center">
-                    <button type="button" className="btn btn-lg btn-primary btn-left" onClick={(e) => this.getStats(true, e)}>Mese</button>
-                    <button type="button" className="btn btn-lg btn-primary btn-right" onClick={(e) => this.getStats(false, e)}>Totale</button>
+                    <button type="button" className="btn btn-lg btn-danger btn-custom btn-left" onClick={(e) => this.getStats(true, e)}>Mese</button>
+                    <button type="button" className="btn btn-lg btn-danger btn-custom btn-right" onClick={(e) => this.getStats(false, e)}>Totale</button>
                 </div><br></br>
                 <CardDeck
                     stats={this.state.stats}

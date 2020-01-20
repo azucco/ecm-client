@@ -1,6 +1,8 @@
 import React from "react";
-/* import { Link } from "react-router-dom"; */
+import { Link } from "react-router-dom";
 import '../css/footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMugHot, faUser, faChartLine } from '@fortawesome/free-solid-svg-icons'
 
 export default class Footer extends React.Component {
 
@@ -8,20 +10,24 @@ export default class Footer extends React.Component {
         return (
 
             <div>
-                <footer class="footer bg-white fixed-bottom border-bottom shadow-sm">
+                <footer class="footer fixed-bottom border-bottom shadow-sm">
                     <ul>
                         <li>
-                            <img src="../img/reward.png" alt="" />
-                            Stats
+                            <Link className="p-2 text-dark" to="/">
+                                <FontAwesomeIcon className="icon" icon={faChartLine} />
+                            </Link>
+                            {/* Stats */}
                         </li>
 
                         <li>
-                            <img src="../img/barista_2.png" alt="" />
-                            Profilo
+                            <Link className="p-2 text-dark" to="/profilo">
+                                <FontAwesomeIcon className="icon" icon={faUser} />
+                            </Link>
+                            {/*  Profile */}
                         </li>
                         <li>
-                            <img src="../img/coffee-cup.png" alt="" />
-                            Add coffee
+                            <FontAwesomeIcon className="icon" icon={faMugHot} />
+                            {/* Add coffee */}
                         </li>
                     </ul>
                 </footer>
