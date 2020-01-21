@@ -1,7 +1,7 @@
 .footer {
 	flex-shrink: 0;
-	background: #f4f4f4;
-	color: #444;
+	background: #dd3400;
+	/* color: #ffff; */
 	margin-top: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -23,4 +23,5 @@
 
 .footer ul li .icon {
 	font-size: 28px;
+	color: #ffff;
 }
