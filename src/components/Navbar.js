@@ -1,5 +1,4 @@
 import React from "react";
-import 'bootstrap/js/dist/collapse.js';
 import Logo from '../img/vending-machine.png'
 import Title from "../components/Title";
 import '../css/navbar.css';
